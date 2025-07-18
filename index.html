@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Malla Curricular Interactiva</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Malla Curricular Interactiva</h1>
+  <div class="creditos">Créditos Aprobados: <span id="total-creditos">0</span></div>
+  <div class="malla">
+    <!-- Materias por semestre -->
+    <div class="semestre" data-semestre="1">
+      <h2>1er Semestre</h2>
+      <div class="materia" data-creditos="5" data-prerrequisitos="">
+        Introducción al Marketing
+      </div>
+      <div class="materia" data-creditos="4" data-prerrequisitos="">
+        Fundamentos de Administración
+      </div>
+      <div class="materia" data-creditos="3" data-prerrequisitos="">
+        Estadística I
+      </div>
+      <div class="materia" data-creditos="3" data-prerrequisitos="">
+        Contabilidad I
+      </div>
+    </div>
+
+    <div class="semestre" data-semestre="2">
+      <h2>2do Semestre</h2>
+      <div class="materia" data-creditos="4" data-prerrequisitos="Introducción al Marketing">
+        Comportamiento del Consumidor
+      </div>
+      <div class="materia" data-creditos="3" data-prerrequisitos="Fundamentos de Administración">
+        Ética Empresarial
+      </div>
+      <div class="materia" data-creditos="3" data-prerrequisitos="Estadística I">
+        Estadística II
+      </div>
+      <div class="materia" data-creditos="3" data-prerrequisitos="Contabilidad I">
+        Contabilidad II
+      </div>
+    </div>
+    <!-- Agrega más semestres y materias si lo deseas -->
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
